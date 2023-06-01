@@ -1,0 +1,95 @@
+.titleProduct {
+    color: var(--black);
+    font-size: 38px;
+}
+
+.containerProductInfos {
+    color: var(--Dark_Gray);
+    padding: 5rem;
+
+}
+
+.containerProductInfos h3 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+.containerShopbtn {
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--black);
+}
+
+.containerShopbtn:hover{
+    filter:opacity(.5);
+    transition: .6s;
+}
+
+.containerShopbtn h2 {
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.containerShopbtn .svg{
+    filter: brightness(50%);
+
+}
+
+.aboutImages {
+    object-fit:contain;
+
+}
+
+.containerSlider {
+    height: 90%;
+    max-width: 1410px;
+}
+
+.containerAboutDescp {
+    width: 29vw;
+    justify-content: center;
+    padding: 0 3rem;
+ 
+}
+
+.titleAbout {
+    margin: 0.5rem 0;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.containerAboutDescp h3 {
+    color: var(--Dark_Gray);
+    font-size: 16px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.sliderBtn {
+    display: flex;
+    padding: 1.15rem 1.60rem;
+    background-color: var(--black);
+}
+
+.sliderBtn:hover {
+    background-color: var(--Very_Dark_Gray);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.containerAbout {
+    justify-content: space-between;
+}
+
+.containerGlobalProduct {
+    height: 100%;
+}
+
+.containerFirstRow{
+    height: 100%;
+}

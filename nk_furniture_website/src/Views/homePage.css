@@ -9,7 +9,6 @@
 .containerHomePage {
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    min-height: 100vh;
-    background-color: lightgrey;
+    margin-left: 2.5vw;
+    background-color: white;
 }
