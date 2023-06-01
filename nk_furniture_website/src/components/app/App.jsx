@@ -1,4 +1,4 @@
-
+import '../../global_css/global.css'
 import './App.css'
 
 function App() {

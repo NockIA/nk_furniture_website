@@ -1,0 +1,15 @@
+@media screen and (max-width:900px) {
+    
+}
+
+@media screen and (min-width:900px) {
+    
+}
+
+.containerHomePage {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: lightgrey;
+}

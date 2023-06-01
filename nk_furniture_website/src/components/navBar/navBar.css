@@ -1,0 +1,53 @@
+@media screen and (max-width:900px) {
+    .containerNav {
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+    .logoMobilePlacement {
+        justify-content: center;
+        display: flex;
+        width: 80%;
+        margin-top: .5vh;
+        align-items: center;
+    }
+    .closeSvg {
+        width: 2rem;
+        margin-left: 2vw;
+    }
+    .openedSvg {
+        width: 2rem;
+        margin-left: 2vw;
+        margin-top: .5vh;
+    }
+    .containerLinks a {
+        color: var(--black);
+    }
+    .containerLinks {
+        width: 100%;
+        justify-content: center;
+        gap: 8vw;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .containerNav {
+        padding: 3.5rem;
+    }
+    .containerLinks {
+        gap: 2vw;
+    }
+    .logoMobilePlacement {
+        justify-content: center;
+        display: flex;
+        margin-right: 3.5vw;
+        align-items: center;
+    }
+}
+
+.containerNav {
+    position: fixed;
+    align-items: center;
+}
+
+
+
