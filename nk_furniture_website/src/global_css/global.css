@@ -1,0 +1,14 @@
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.colunmContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.alignCenter {
+    justify-content: center;
+    align-items: center;
+}
