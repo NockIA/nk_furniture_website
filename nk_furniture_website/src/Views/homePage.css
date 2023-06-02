@@ -1,14 +1,23 @@
 @media screen and (max-width:900px) {
-    
 }
 
 @media screen and (min-width:900px) {
-    
+    .containerHomePage {
+        margin-left: 2.5vw;
+    }
 }
 
 .containerHomePage {
     display: flex;
     flex-direction: column;
-    margin-left: 2.5vw;
+
     background-color: white;
+    width: max-content;
+}
+
+.containerHome {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
 }

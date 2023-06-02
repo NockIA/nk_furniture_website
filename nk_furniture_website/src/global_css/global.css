@@ -1,3 +1,7 @@
+
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap');
 
 .rowContainer {
@@ -33,4 +37,8 @@ p {
 a {
     text-decoration: none;
     color: var(--White);   
+}
+
+a:hover {
+    color: white;
 }

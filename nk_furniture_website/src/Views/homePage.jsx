@@ -5,9 +5,11 @@ import { Slider } from '../components/slider_component/slider'
 
 export const Home = () => {
     return (
-        <div className='containerHomePage'>
-            <NavBar/>
-            <Slider slider={"Slider_1"}/>
+        <div className='containerHome'>
+            <div className='containerHomePage'>
+                <NavBar/>
+                <Slider slider={"Slider_1"}/>
+            </div>
         </div>
     )
 }

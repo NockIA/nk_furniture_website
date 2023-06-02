@@ -5,6 +5,14 @@ import { useEffect,useState } from 'react'
 import axios from 'axios'
 
  export const Slider = (props) => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    useEffect(() => {
+        const handleResize = () => {
+          setScreenWidth(window.innerWidth);
+        };      
+        window.addEventListener('resize', handleResize);
+    
+    }, [screenWidth]);
     useEffect (() => {
         axios.get("/api/Data").then((response) => setResult(JSON.parse(response.data)))
         .catch(console.error)
@@ -21,8 +29,9 @@ import axios from 'axios'
       }, [result, currentProduct,currentKey]);
     return (
         <div className='columnContainer containerSlider'>
-            <div className='rowContainer containerFirstRow'>
-                <img src={currentProduct.imgSrc} alt="product_img" />
+            <div className='containerFirstRow'>
+                {screenWidth < 1400 && <img className='imgMobile' src={currentProduct.imgSrcMobile} alt="product_img" />}
+                {screenWidth >= 1400 &&<img src={currentProduct.imgSrcDesktop} alt="product_img" />}
                 <div className='columnContainer containerGlobalProduct'>
                     <div className='columnContainer containerProductInfos'>
                         <h1 className='titleProduct'>{currentProduct.title}</h1>
@@ -34,7 +43,7 @@ import axios from 'axios'
                             </div>
                         </a>
                     </div>
-                    <div className='rowContainer'>
+                    <div className='rowContainer sliderContainer'>
                         <span className='sliderBtn' onClick={() => setCurrentKey((currentKey+5) % 3)}>
                             <svg width="14" height="24"  xmlns="http://www.w3.org/2000/svg"><path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fillRule="evenodd"/></svg>
                         </span>
@@ -44,8 +53,8 @@ import axios from 'axios'
                     </div>
                 </div>
             </div>
-            <div className='rowContainer containerAbout'>
-                <img className='aboutImages' src="./src/assets/images/image-about-dark.jpg" alt="about_dark_img" />
+            <div className='containerAbout'>
+                <img className='aboutImages imgMobile' src="./src/assets/images/image-about-dark.jpg" alt="about_dark_img" />
                 <div className='columnContainer containerAboutDescp'>
                     <h2 className='titleAbout'>About our furniture</h2>
                     <h3> Our multifunctional collection blends design and function to suit your individual taste.
@@ -54,8 +63,7 @@ import axios from 'axios'
                     or anything in between. Product specialists are available to help you create your dream space.
                     </h3>
                 </div>
-                <img className='aboutImages' src="./src/assets/images/image-about-light.jpg" alt="about_light_img" />
-                
+                <img className='aboutImages imgMobile' src="./src/assets/images/image-about-light.jpg" alt="about_light_img" />    
             </div>
         </div>
     )
