@@ -1,3 +1,5 @@
+/*----------------------- Phone Responsive -----------------------*/
+
 @media screen and (max-width:900px) {
     .containerNav {
         padding: 2rem 1rem;
@@ -29,6 +31,8 @@
     }
 }
 
+/*----------------------- Desktop Responsive -----------------------*/
+
 @media screen and (min-width:900px) {
     .containerNav {
         padding: 3.5rem;
@@ -51,6 +55,8 @@
         border-bottom: 2px solid white;
     }
 }
+
+/*----------------------- Containers -----------------------*/
 
 .containerNav {
     position: fixed;

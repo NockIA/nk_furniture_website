@@ -1,8 +1,15 @@
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600&display=swap');
+
+body {
+    font-family: 'League Spartan';
+}
+
+:root {
+    --black : hsl(0, 0%, 0%);
+    --Dark_Gray : hsl(0, 0%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Very_Dark_Gray: hsl(0, 0%, 27%);
+}
 
 .rowContainer {
     display: flex;
@@ -17,17 +24,6 @@
 .alignCenter {
     justify-content: center;
     align-items: center;
-}
-
-body {
-    font-family: 'League Spartan';
-}
-
-:root {
-    --black : hsl(0, 0%, 0%);
-    --Dark_Gray : hsl(0, 0%, 63%);
-    --White: hsl(0, 0%, 100%);
-    --Very_Dark_Gray: hsl(0, 0%, 27%);
 }
 
 p {

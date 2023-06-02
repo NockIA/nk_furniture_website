@@ -5,7 +5,7 @@ import { Slider } from '../components/slider_component/slider'
 
 export const Home = () => {
     return (
-        <div className='containerHome'>
+        <div className='containerHome alignCenter'>
             <div className='containerHomePage'>
                 <NavBar/>
                 <Slider slider={"Slider_1"}/>

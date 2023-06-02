@@ -1,12 +1,11 @@
+/*----------------------- Phone Responsive -----------------------*/
+
 @media screen and (max-width:900px) {
     .containerFirstRow {
         flex-direction: column;
     }
     .containerAbout {
         flex-direction: column;
-    }
-    .imgMobile{
-        width: 100%;
     }
     .containerProductInfos {
         padding: 3vh 7vw;
@@ -19,7 +18,12 @@
         top: 36.7vh;
         right: 0;
     }
+    .imgMobile{
+        width: 100%;
+    }
 }
+
+/*----------------------- Desktop Responsive -----------------------*/
 
 @media screen and (min-width:900px) {
     .containerFirstRow {
@@ -41,15 +45,36 @@
     }
 }
 
-.titleProduct {
-    color: var(--black);
-    font-size: 38px;
-}
+/*----------------------- Containers -----------------------*/
 
 .containerProductInfos {
     color: var(--Dark_Gray);
+}
 
-  
+.containerAboutDescp {
+    justify-content: center;
+}
+
+.containerAbout {
+    justify-content: space-between;
+    display: flex;
+}
+
+.containerGlobalProduct {
+    height: 100%;
+    justify-content: space-between;
+}
+
+.containerFirstRow{
+    height: 100%;
+    display: flex;
+}
+
+/*----------------------- Texts -----------------------*/
+
+.titleProduct {
+    color: var(--black);
+    font-size: 38px;
 }
 
 .containerProductInfos h3 {
@@ -57,36 +82,10 @@
     font-size: 16px;
 }
 
-
-.containerShopbtn {
-    align-items: center;
-    gap: 1.5rem;
-    color: var(--black);
-}
-
-.containerShopbtn:hover{
-    filter:opacity(.5);
-    transition: .6s;
-}
-
 .containerShopbtn h2 {
     letter-spacing: .6rem;
     text-transform: uppercase;
     font-size: 13px;
-}
-
-.containerShopbtn .svg{
-    filter: brightness(50%);
-
-}
-
-.aboutImages {
-    object-fit:contain;
-
-}
-
-.containerAboutDescp {
-    justify-content: center;
 }
 
 .titleAbout {
@@ -105,6 +104,27 @@
     font-weight: normal;
 }
 
+/*----------------------- Others -----------------------*/
+
+.containerShopbtn {
+    align-items: center;
+    gap: 1.5rem;
+    color: var(--black);
+}
+
+.containerShopbtn:hover{
+    filter:opacity(.5);
+    transition: .6s;
+}
+
+.containerShopbtn .svg{
+    filter: brightness(50%);
+}
+
+.aboutImages {
+    object-fit:contain;
+}
+
 .sliderBtn {
     display: flex;
     padding: 1.15rem 1.60rem;
@@ -118,18 +138,5 @@
     transition: .5s;
 }
 
-.containerAbout {
-    justify-content: space-between;
-    display: flex;
-}
 
-.containerGlobalProduct {
-    height: 100%;
-    justify-content: space-between;
-}
-
-.containerFirstRow{
-    height: 100%;
-    display: flex;
-}
 

@@ -1,5 +1,4 @@
-@media screen and (max-width:900px) {
-}
+/*----------------------- Desktop Responsive -----------------------*/
 
 @media screen and (min-width:900px) {
     .containerHomePage {
@@ -7,17 +6,17 @@
     }
 }
 
+/*----------------------- Containers -----------------------*/
+
 .containerHomePage {
     display: flex;
     flex-direction: column;
-
-    background-color: white;
     width: max-content;
+    background-color: white;
 }
 
 .containerHome {
     display: flex;
+
     width: 100vw;
-    align-items: center;
-    justify-content: center;
 }
