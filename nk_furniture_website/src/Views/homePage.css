@@ -1,0 +1,22 @@
+/*----------------------- Desktop Responsive -----------------------*/
+
+@media screen and (min-width:900px) {
+    .containerHomePage {
+        margin-left: 2.5vw;
+    }
+}
+
+/*----------------------- Containers -----------------------*/
+
+.containerHomePage {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    background-color: white;
+}
+
+.containerHome {
+    display: flex;
+
+    width: 100vw;
+}
