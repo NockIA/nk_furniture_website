@@ -34,7 +34,8 @@ This project tis made with
 
 ## Render
 
-![furniture_render](https://github.com/NockIA/nk_furniture_website/assets/103142957/8c6d16ae-8ab5-4b92-980d-996cdc401051)
+![Alt text](./nk_furniture_website/src/assets/render/render_desktop.png)
+![Alt text](./nk_furniture_website/src/assets/render/render_mobile.png)
 
 ## Credits
 
